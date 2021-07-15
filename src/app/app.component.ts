@@ -23,10 +23,6 @@ export class AppComponent {
         ]),
       ],
     });
-
-    this.todos.push(new Todo(1, 'Passear com o cachorro', false));
-    this.todos.push(new Todo(2, 'Supermecado', false));
-    this.todos.push(new Todo(3, 'Cortar Cabelo', true));
   }
 
   add() {
