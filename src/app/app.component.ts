@@ -29,6 +29,12 @@ export class AppComponent {
     this.todos.push(new Todo(3, 'Cortar Cabelo', true));
   }
 
+  add() {
+    const title = this.form.controls['title'].value;
+    const id = this.todos.length + 1;
+    this.todos.push(new Todo(id, title, false));
+  }
+
   remove(todo: Todo) {
     const index = this.todos.indexOf(todo);
     if (index !== -1) {
